@@ -6,7 +6,9 @@
     <property name="classes.dir" value="${build.dir}/classes"/>
     <property name="jar.dir"     value="${build.dir}/jar"/>
     <property name="doc.dir"     value="doc"/>
-
+    plugins {
+         id "org.sonarqube" version "3.3"
+     }
     <!-- targets -->
     <target name="compile" description="compile project">
         <mkdir dir="${classes.dir}"/>
